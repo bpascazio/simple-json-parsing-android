@@ -13,9 +13,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DownloadPostTask myTask = new DownloadPostTask();
-
-        myTask.execute("https://api.myjson.com/bins/45z6n");
+        DownloadPostTask myTask = new DownloadPostTask(findViewById(R.id.rootView));
+        myTask.execute("https://api.myjson.com/bins/46fdz");
     }
 
 
